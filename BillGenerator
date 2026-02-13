@@ -4,20 +4,20 @@ class BillGenerator {
 
     void generateBill(int itemTotal) {
         System.out.println("Customer Type: Regular");
-        System.out.println("Final Bill Amount: ₹" + itemTotal);
+        System.out.println("Total Bill Amount: ₹" + itemTotal);
     }
 
     void generateBill(int itemTotal, int discount) {
         System.out.println("Customer Type: Privileged");
         int finalAmount = itemTotal - discount;
-        System.out.println("Final Bill Amount: ₹" + finalAmount);
+        System.out.println("Total Bill Amount: ₹" + finalAmount);
     }
 
     void generateBill(int itemTotal, double discountPercent) {
         System.out.println("Customer Type: Festive Offer");
         double discountAmount = itemTotal * discountPercent / 100;
         double finalAmount = itemTotal - discountAmount;
-        System.out.println("Final Bill Amount: ₹" + finalAmount);
+        System.out.println("Total Bill Amount: ₹" + finalAmount);
     }
 
     public static void main(String[] args) {
